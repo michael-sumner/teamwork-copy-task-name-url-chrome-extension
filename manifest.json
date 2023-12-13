@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "Teamwork Copy Task Name and URL",
+    "author": "Michael Sumner",
+    "version": "1.0",
+    "description": "Allows you to copy the task name and URL from the task list in Teamwork.",
+    "permissions": ["activeTab"],
+    "content_scripts": [
+      {
+        "matches": ["*://*.teamwork.com/app/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
